@@ -1,0 +1,68 @@
+/*
+Theme Name:     Tutsplus Mega Menu Theme. Child for ColorMag.
+Theme URI:      https://github.com/rachelmccollin/tutsplus-mega-menu
+Description:    Theme to support tutsplus tutorial. Child theme for the Twenty Fifteen theme.
+Author:         Rachel McCollin
+Author URI:     https://rachelmccollin.com/
+Template:       colormag
+
+Version:        1.0
+*/
+
+/************************************************************************
+	Styling for mega menu 
+*************************************************************************/
+
+@media screen and ( min-width: 500px ) {
+
+	/* positioning and background */
+	.main-navigation {
+		position: relative;
+	}
+	.main-navigation li {
+		position: static;
+	}
+	.main-navigation ul li:hover ul {
+		display: inherit;
+		position: absolute;
+		left: 0;
+		right: 0;
+		width: 100%;
+		background-color: #bababa;
+	}
+	.main-navigation ul li:hover ul li ul {
+		display: inherit;
+		position: relative;
+		left: 0;
+	}
+	
+	
+	/* layout of lists */
+	.main-navigation ul li:hover ul li {
+		float: left;
+		position: static;
+		display: block;
+		padding-top: 1em;
+	}
+	.main-navigation ul li:hover ul li ul li {
+		float: none;
+		padding-top: 0;
+	}
+	.main-navigation ul:hover ul li ul li a {
+		padding-left: 1em;
+		padding-top: 0;
+	}
+	
+	/* color of second level items */
+	.main-navigation ul:hover ul li a:link,
+	.main-navigation ul:hover ul li a:visited {
+		color: #b01b1b;
+		text-decoration: underline;
+	}
+	.main-navigation ul:hover ul li ul li a:link,
+	.main-navigation ul:hover ul li ul li a:visited {
+		color: #fff;
+		text-decoration: none;
+	}
+	
+}
